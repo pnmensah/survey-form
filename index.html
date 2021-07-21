@@ -22,17 +22,50 @@
       </header>
       <form id="survey-form">
         <div class="form-group">
-          <label for="name" id="name">Name</label>
-          <input type="" id="name" placeholder="Enter your name" required>
-        </div>
+          <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+        </div><br>
         <div class="form-group">
-          <label for="email" id="email">Email</label>
-          <input type="email" id="email" placeholder="Enter your email" required>
-        </div>
+          <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="name" placeholder="Enter your email" required><br>
+        </div><br>
         <div class="form-group">
-          <label for="number" id="number">Number</label>
-          <input type="number" id="number" min="10" max="99" placeholder="Age" required>
-        </div>
+          <label for="number" id="number-label">Number</label>
+          <input type="number" id="number" min="10" max="99" placeholder="Age" required><br>
+        </div><br>
+        <div class="form-group">
+          <label for="dropdown">What Job do you do:</label>
+            <select id="dropdown" name="dropdown">
+              <option value="engineer">Engineer</option>
+              <option value="teacher">Teacher</option>
+              <option value="accountant">Accountant</option>
+              <option value="doctor">Doctor</option>
+            </select><br>
+        </div><br><br><br>
+        <div class="form-group"> 
+            <p>What are some of the feature you look out for on mobile phones</p>
+            <input type="radio" id="size" name="feature" value="SIZE">
+            <label for="size">Storage Space</label><br>
+            <input type="radio" id="brand" name="feature" value="BRAND">
+            <label for="brand">Brand</label><br>
+            <input type="radio" id="camera" name="feature" value="CAMERA">
+            <label for="camera">Camera</label><br>
+        </div><br>
+        <div class="form-group">
+          <p>What things should be improved in the future on mobile phones</p>
+          <input type="checkbox" id="enhancement1" name="enhancement1" value="Bike">
+          <label for="enhancement1"> They have to increase the camera magapixels</label><br>
+          <input type="checkbox" id="enhancement2" name="enhancement2" value="Car">
+          <label for="enhancement2"> I want longer battery life</label><br>
+          <input type="checkbox" id="enhancement3" name="enhancement3" value="Boat">
+          <label for="enhancement3"> I want cheaper but powerful devices</label><br>
+        </div><br><br>
+        <div class="form-group">
+          <textarea name="comment" form="myform">Enter text here...</textarea>
+        </div><br>
+        <div class="form-group">
+          <button type="submit" id="submit" form="myform" value="Submit">Submit</button>
+        </div><br>
       </form>
     </div>
 
